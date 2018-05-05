@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/course.css">
+</head>
+<!-- 在线课堂首页 -->
+
+<body style="background-color: #fefefe;">
+  <div>
+    <!-- 头部 -->
+    <div class="header">
+      <div class="wrap">
+        <!-- 左侧的Logo -->
+        <div class="header-logo fl">
+          <img src="images/logo.png" alt="">
+
+        </div>
+        <!-- 左侧nav -->
+        <ul class="header-nav fl">
+          <li class="fl">
+            <a href="/" class="on">首页</a>
+          </li>
+          <li class="fl" id="course-wrap">
+            <a href="JavaScript:;" class="course-btn">免费课程</a>
+            <div class="course-nav">
+              <a href="/Index/toeft">托福一对一</a>
+              <a href="javascript:;">雅思一对一
+                <p style="font-size: 10px;position: absolute;top:15px;left:15px;">(coming soon)</p>
+              </a>
+              <a href="javascript:;">SAT一对一
+                <p style="font-size: 10px;position: absolute;top:15px;left:15px;">(coming soon)</p>
+              </a>
+            </div>
+          </li>
+          <li class="fl">
+            <a href="/student/homework.html">我的作业</a>
+          </li>
+          <li class="fl">
+            <a href="/Student/course">我的课程</a>
+          </li>
+          <li class="fl">
+            <a href="/Student/order">我的订单</a>
+          </li>
+          <li class="fl">
+            <a href="/Student/account">我的账户</a>
+          </li>
+        </ul>
+        <!-- 右边登录注册 -->
+        <div class="header-right fr">
+          <div class="fl">
+            <i class="iconfont">&#xe846;</i>
+            <span>0755-86309669</span>
+          </div>
+          <!-- 用户登录情况 -->
+          <div class="fr login">
+            <a href="http://www.ieduchina.com/login.html?forward={$forward}" class="sign transit">登录</a>
+            <a href="http://www.ieduchina.com/register.html?forward={$forward}" class="btn reg transit header-zhuce">注册</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="kc_tab">
+      <a href="" class="on">雅思一对一课堂</a>
+      <a href="">雅思一对一课堂</a>
+    </div>
+    <div class="kc_banner">
+      <p>IETS IT Support Professional Certificate</p>
+      <p>雅思标准认证课程</p>
+    </div>
+    <!-- 介绍 -->
+    <div class="kc_bgfe">
+      <div class="kc_intro">
+        <div class="wrap">
+          <!-- 雅思课程听力训练 -->
+          <div class="kc_xunlian">
+            <h3>上课中</h3>
+            <H2>雅思课程听力训练</H2>
+            <p>试听课：
+              <span>20</span> 课时</p>
+            <p>赠送课：
+              <span>20</span> 课时</p>
+            <p>正式课：
+              <span>20</span> 课时</p>
+          </div>
+          <!-- 上课须知 -->
+          <div class="kc_sklxz">
+            <h3>上课须知</h3>
+            <p>开课前10分钟可进入</p>
+            <p>开课前10分钟可进入</p>
+            <p>
+              <span>助教：
+                <span>程老师</span>
+              </span>
+              <span>电话：
+                <span>289138918014</span>
+              </span>
+            </p>
+          </div>
+          <!-- 上课时间 -->
+          <div class="kc_time">
+            <a href="" class="chakan">查看排课详情</a>
+            <span>上课时间</span>
+            <p>下次上课时间：2017-2-12 14:00～15:00</p>
+            <span>已开始</span>
+            <a href="" class="jinru">进入</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- test练习 -->
+    <div class="task-wrap">
+      <div class="wrap">
+        <div class="task-title">
+          <span>免费体验</span>
+          <a href="">立即体验</a>
+        </div>
+        <div class="task-con">
+          <div class="task-con-title">第一轮</div>
+          <!-- tab切换 -->
+          <div class="tab-contain">
+            <!-- tab栏 -->
+            <div id="tabs">
+              <i href="javascript:;" class="iconfont">&#xe630;</i>
+            </div>
+            <div class="generalize">
+              <div>TASK 1——TASK 10</div>
+              <div>TASK 11——TASK 20</div>
+              <div>TASK 21——TASK 30</div>
+              <div>TASK 31——TASK 40</div>
+
+            </div>
+            <!-- 对应显示内容 -->
+            <div id="content">
+              <div id="tab1" class="item show">
+                  <div class="list_wrap">
+                      <div class="tab-con-left">
+                          <img src="images/reading.jpg" alt="">
+                        </div>
+                        <ul class="tab-con-right">
+                          <li>
+                            <span class="tab-con-title">句子分析基础</span>
+                            <div class="progress-bar">
+                                <div class="progress-win" style="background-color: red;"></div>
+                            </div>
+                            <span class="progress-text">已完成
+                              <span class="js-completed">2</span>/5</span>
+                            <a href="#" class="tab-con-test">
+                              <i class="iconfont">&#xe663;</i>去练习</a>
+                          </li>
+                          <li>
+                            <span class="tab-con-title">句子分析</span>
+                            <div class="progress-bar">
+                                <div class="progress-win" style="background-color: red;"></div>
+                            </div>
+                            <span class="progress-text">已完成
+                              <span class="js-completed">4</span>/5</span>
+                            <a href="#" class="tab-con-test">
+                              <i class="iconfont">&#xe663;</i>去练习</a>
+                          </li>
+                        </ul>
+                  </div>
+                  <div class="list_wrap">
+                      <div class="tab-con-left">
+                          <img src="images/listen.jpg" alt="">
+                        </div>
+                        <ul class="tab-con-right">
+                            <li>
+                                <span class="tab-con-title">五步精听</span>
+                                <div class="progress-bar">
+                                  <div class="progress-win" style="background-color: red;"></div>
+                                </div>
+            
+                                <span class="progress-text">已完成
+                                  <span class="js-completed">3</span>/5</span>
+                                <a href="#" class="tab-con-test">
+                                  <i class="iconfont">&#xe663;</i>去练习</a>
+                              </li>
+                        </ul>
+                  </div>
+              </div>
+              <div id="tab2" class="item">
+                <h2>TASK 2</h2>
+                <p>text here!!!text here!!!text here!!</p>
+                <p>text here!!!text here!!!text here!!!text here!text here!!!text here!!!text here!!!</p>
+              </div>
+              <div id="tab3" class="item">
+                <h2>title 33333</h2>
+                <p>text here!!!</p>
+                <p>text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text
+                  here!!!
+                </p>
+              </div>
+              <div id="tab4" class="item">
+                <h2>title 44444</h2>
+                <p>text here!!!text here!!!text here!!!text here!!!text here!!!</p>
+                <p>text here!!!text </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrap">
+        <div class="lianjie">
+          <p style="margin-bottom: 20px;">
+            <span>友情链接: </span>
+            <a href="http://www.ieduchina.com/" target="_blank">国际教育网</a>
+            <a href="http://www.iedukids.com" target="_blank">爱读教育</a>
+            <a href="https://ielts.etest.net.cn/#" target="_blank" rel="nofollow">雅思报名入口</a>
+            <a href="https://toefl.etest.net.cn/" target="_blank" rel="nofollow">托福报名入口</a>
+            <a href="https://www.collegeboard.org/" target="_blank" rel="nofollow">SAT报名入口</a>
+          </p>
+          <p>深圳南山校区：广东省深圳市南山区海德2道288号茂业时代广场19E</p>
+          <p>深圳福田校区：广东省深圳市福田区深南大道3018号世纪汇2501F</p>
+          <p>联系我们 0755-86309669</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    // 免费课程 切换
+    course_btn();
+
+    function course_btn() {
+
+      $("#course-wrap").on("mouseover", function () {
+
+        $(".course-nav").show();
+
+      })
+      $("#course-wrap").on("mouseout", function () {
+
+        $(".course-nav").hide();
+
+      })
+      $(".course-nav").on("click", function () {
+        $(".course-nav").hide();
+
+      })
+    }
+  </script>
+  <script>
+      window.onload = function () {
+        // 遍历生成tab
+        createTabLi(0, 10)
+  
+        function createTabLi(first, last) {
+          var tabs = document.querySelector("#tabs");
+          var new_li = document.createElement('ul');
+          for (var i = first; i < last; i++) {
+            new_li.innerHTML += '<li><a href="javascript:;" title="tab' + (i + 1) + '">TASK ' + (i + 1) +
+              '</a></li>';
+            tabs.appendChild(new_li);
+          }
+          $("#tabs li:first").addClass("current");
+        }
+        // 右上角箭头切换
+        var flag = true;
+        $('#tabs i').click(function (e) {
+          e.preventDefault();
+          if (flag) {
+            $(this).addClass("on");
+            $(".generalize").show();
+            flag = !flag;
+          } else {
+            $(this).removeClass("on");
+            $(".generalize").hide();
+            flag = !flag;
+          }
+        });
+        // 点击右侧更换题目序列；
+        var allTabs = document.querySelectorAll(".generalize div")
+        $(".generalize div").on("click", function () {
+          $("#tabs ul").remove();
+          var i = $(this).index();
+          createTabLi((i * 10), (i + 1) + "0");
+          $(".generalize").hide();
+          $("#tabs i").removeClass("on");
+          tabConHide(i);
+          flag = true;
+        })
+        // 下方内容默认显示第一个
+        tabConHide(0);
+  
+        function tabConHide(ind) {
+          $("#content>div").removeClass('show');
+          $("#content>div:eq(" + (ind * 10) + ")").addClass('show');
+        }
+  
+        // tab切换
+        $('body').on("click", "#tabs a", function (e) {
+          e.preventDefault();
+          $('#tabs li').removeClass("current")
+          $(this).parent().addClass("current");
+          $("#content div").removeClass("show");
+          $('#' + $(this).attr('title')).addClass('show');
+        });
+      }
+    </script>
+</body>
+
+</html>

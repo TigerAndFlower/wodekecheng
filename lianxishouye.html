@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/course.css">
+</head>
+<!-- 在线课堂首页 -->
+
+<body style="background-color: #fefefe;">
+	<div>
+		<!-- 头部 -->
+		<div class="header">
+			<div class="wrap">
+				<!-- 左侧的Logo -->
+				<div class="header-logo fl">
+					<img src="images/logo.png" alt="">
+
+				</div>
+				<!-- 左侧nav -->
+				<ul class="header-nav fl">
+					<li class="fl">
+						<a href="/" class="on">首页</a>
+					</li>
+					<li class="fl" id="course-wrap">
+						<a href="JavaScript:;" class="course-btn">免费课程</a>
+						<div class="course-nav">
+							<a href="/Index/toeft">托福一对一</a>
+							<a href="javascript:;">雅思一对一
+								<p style="font-size: 10px;position: absolute;top:15px;left:15px;">(coming soon)</p>
+							</a>
+							<a href="javascript:;">SAT一对一
+								<p style="font-size: 10px;position: absolute;top:15px;left:15px;">(coming soon)</p>
+							</a>
+						</div>
+					</li>
+					<li class="fl">
+						<a href="/student/homework.html">我的作业</a>
+					</li>
+					<li class="fl">
+						<a href="/Student/course">我的课程</a>
+					</li>
+					<li class="fl">
+						<a href="/Student/order">我的订单</a>
+					</li>
+					<li class="fl">
+						<a href="/Student/account">我的账户</a>
+					</li>
+
+
+				</ul>
+
+				<!-- 右边登录注册 -->
+				<div class="header-right fr">
+					<div class="fl">
+						<i class="iconfont">&#xe846;</i>
+						<span>0755-86309669</span>
+					</div>
+					<!-- 用户登录情况 -->
+					<div class="fr login">
+						<a href="http://www.ieduchina.com/login.html?forward={$forward}" class="sign transit">登录</a>
+						<a href="http://www.ieduchina.com/register.html?forward={$forward}" class="btn reg transit header-zhuce">注册</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- banner -->
+		<div class="kc_wrap">
+			<div class="kc_header">
+				<div class="wrap">
+					<h2>欢迎来到学习中心，你对哪门课程感兴趣</h2>
+				</div>
+			</div>
+			<!-- 三个报名入口 -->
+			<div class="kc_apply_wrap">
+				<ul>
+					<li>
+						<div><img src="./images/yasi.png" alt=""></div>
+						<a href="">报名</a>
+					</li>
+					<li>
+						<div><img src="./images/tuofu.png" alt=""></div>
+						<a href="">报名</a>
+					</li>
+					<li>
+						<div><img src="./images/sat.png" alt=""></div>
+						<a href="">报名</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer" style="position: fixed;left: 0;bottom: 0;">
+            <div class="wrap">
+                <div class="lianjie">
+                    <p style="margin-bottom: 20px;"><span>友情链接: </span>
+                        <a href="http://www.ieduchina.com/" target="_blank">国际教育网</a>
+                        <a href="http://www.iedukids.com" target="_blank">爱读教育</a>
+                        <a href="https://ielts.etest.net.cn/#" target="_blank" rel="nofollow">雅思报名入口</a>
+                        <a href="https://toefl.etest.net.cn/" target="_blank" rel="nofollow">托福报名入口</a>
+                        <a href="https://www.collegeboard.org/" target="_blank" rel="nofollow">SAT报名入口</a>
+                   </p>
+                    <p>深圳南山校区：广东省深圳市南山区海德2道288号茂业时代广场19E</p>
+                    <p>深圳福田校区：广东省深圳市福田区深南大道3018号世纪汇2501F</p>
+                    <p>联系我们 0755-86309669</p>
+                </div>
+            </div>
+        </div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		// 免费课程 切换
+		course_btn();
+
+		function course_btn() {
+
+			$("#course-wrap").on("mouseover", function () {
+
+				$(".course-nav").show();
+
+			})
+			$("#course-wrap").on("mouseout", function () {
+
+				$(".course-nav").hide();
+
+			})
+			$(".course-nav").on("click", function () {
+				$(".course-nav").hide();
+
+			})
+		}
+	</script>
+</body>
+
+</html>
