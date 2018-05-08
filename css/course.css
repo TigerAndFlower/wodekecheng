@@ -627,33 +627,33 @@
   width: 100%;
   padding-top: 50px;
 }
-
-.task-wrap .task-title {
+.task-header{
   overflow: hidden;
 }
-
-.task-wrap .task-title span {
+.task-header h3{
   float: left;
-  font-weight: 600;
   font-size: 26px;
   color: #346269;
-  line-height: 36px;
-  margin-right: 30px;
+  line-height: 26px;
 }
-
-.task-wrap .task-title a {
+.task-header select{
   float: left;
-  width: 123px;
-  height: 36px;
-  text-align: center;
-
   font-size: 14px;
-  line-height: 36px;
-  color: #27AEC2;
-  border: 1px solid #27AEC2;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  display: none;
+  color: #212121;
+  line-height: 26px;
+  padding: 3px;
+  margin-left: 20px;
+}
+.task-header-right{
+  overflow: hidden;
+  float: right;
+}
+.task-header-right p{
+  float: left;
+  font-size: 14px;
+  color: #909090;
+  line-height: 26px;
+  margin-left: 30px;
 }
 
 .task-wrap .task-con {
@@ -842,7 +842,7 @@
   font-size: 12px;
   color: #346269;
 }
-.task-wrap .task-con #content>div .tab-con-right li .progress-text .toast-down{
+.task-wrap .task-con #content>div .tab-con-right li .progress-text .t{
     width: 18px;
     height: 11px;
     background: url(http://lianxi.ieduchina.com/statics/images/lianxi/down.png) center no-repeat;
@@ -1142,6 +1142,7 @@
   border-radius: 50px;
   line-height: 40px;
 }
+
 .toast {
   position: absolute;
   width: 195px;
@@ -1173,6 +1174,46 @@
   background-size: contain;
   right: 20px;
   top: 11px;
+}
+
+/* 右侧选项 */
+
+.testTab {
+  position: absolute;
+  width: 195px;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  top: 68px;
+  right: 35px;
+  padding-top: 12px;
+  z-index: 11;
+  display: none;
+}
+.testTab .testTab-item {
+  height: 36px;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #346269;
+  line-height: 36px;
+  cursor: pointer;
+  padding-left: 16px;
+  position: relative;
+}
+.testTab .testTab-item:hover{
+  background-color: #dedede;
+}
+.testTab .triangle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  transform: rotate(45deg);
+  z-index: 10;
+  right: 22px;
+  top: -8px;
+  background-color: #fff;
 }
 .kc_header{
   padding-top: 60px;
@@ -1357,239 +1398,302 @@ margin-top: 20px;
 .task-wrap {
   width: 100%;
   padding-top: 50px;
+  margin-bottom: 30px;
+  background: #ffffff;
 }
-.task-wrap .task-title {
-  overflow: hidden;
-}
-.task-wrap .task-title span {
-  float: left;
-  font-family: PingFangSC-Medium;
-  font-size: 26px;
-  color: #346269;
-  line-height: 36px;
-  margin-right: 30px;
-}
-.task-wrap .task-title a {
-  float: left;
-  width: 123px;
-  height: 36px;
-  text-align: center;
-  font-family: PingFangSC-Semibold;
-  font-size: 14px;
-  line-height: 36px;
-  color: #27AEC2;
-  border: 1px solid #27AEC2;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  display: none;
-}
-.task-wrap .task-con {
-  position: relative;
-  width: 100%;
-  padding-top: 28px;
-  margin-top: 38px;
-  margin-bottom: 78px;
-  background: #FFFFFF;
+.task-wrap .wrap{
+  padding: 30px;
+  background: #ffffff;
   box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
 }
-.task-wrap .task-con .mask {
-  position: absolute;
-  top: -15px;
-  width: 100%;
-  height: 580px;
-  background-color: #000;
-  opacity: .7;
-  z-index: 100;
-  color: #fff;
-  text-align: center;
-  line-height: 580px;
-  font-size: 26px;
-}
-.task-wrap .task-con .task-con-title {
-  width: 122px;
-  height: 33px;
-  background: url(../images/Rectangle.png) no-repeat center;
-  background-size: contain;
-  font-family: PingFangSC-Regular;
-  font-size: 14px;
-  line-height: 33px;
-  text-indent: 3em;
-  color: #FFFFFF;
-  margin-bottom: 30px;
-}
-.task-wrap .task-con .tab-contain {
-  margin: 10px auto;
-  width: 1100px;
-  position: relative;
-}
-.task-wrap .task-con .tab-contain .generalize {
-  position: absolute;
-  top: 45px;
-  right: -20px;
-  width: 195px;
-  height: 158px;
-  background: #FFFFFF;
-  padding-top: 20px;
-  border: 1px solid #EFEFEF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  z-index: 100;
+
+
+.homework-item {
+  padding-top: 36px;
+  padding-bottom: 45px;
   display: none;
 }
-.task-wrap .task-con .tab-contain .generalize div {
-  width: 100%;
-  height: 36px;
-  text-align: center;
-  font-family: PingFangSC-Medium;
-  font-size: 14px;
-  color: #346269;
-  line-height: 36px;
+.homework-item:first-child{
+  display: block;
 }
-.task-wrap .task-con .tab-contain .generalize div:hover {
-  background-color: #F4F4F4;
-}
-.task-wrap .task-con #tabs {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.task-wrap .task-con #tabs ul {
-  position: relative;
-  overflow: hidden;
-  width: 98%;
-  margin: 0;
-  padding: 0;
-}
-.task-wrap .task-con #tabs i {
-  position: absolute;
-  top: 7px;
-  right: 0;
-  cursor: pointer;
-  transform: rotate(180deg);
-}
-.task-wrap .task-con #tabs i.on {
-  transform: rotate(360deg);
-}
-.task-wrap .task-con #tabs li {
-  float: left;
-  margin: 0;
-}
-.task-wrap .task-con #tabs li a {
-  position: relative;
-  padding: 10px 18px;
-  float: left;
-  border-bottom: 2px solid #fff;
-  font-family: PingFangSC-Medium;
-  font-size: 18px;
-  color: #346269;
-  line-height: 18px;
-}
-.task-wrap .task-con #tabs .current a {
-  border-bottom: 2px solid #346269;
-  z-index: 4;
-}
-.task-wrap .task-con #content {
-  background: #fff;
-  padding: 50px 0;  
-  position: relative;
-  border-radius: 0 5px 5px 5px;
-}
-.task-wrap .task-con #content > div {
-  width: 100%;
-  overflow: hidden;
-}
-.task-wrap .task-con #content > div .tab-con-left {
-  float: left;
-  width: 393px;
-  height: 200px;
-}
-.task-wrap .task-con #content > div .tab-con-left img {
-  width: 100%;
-  height: 100%;
-}
-.task-wrap .task-con #content > div .tab-con-right {
-  float: right;
-  width: 675px;
-}
-.task-wrap .task-con #content > div .tab-con-right li {
-  position: relative;
-  width: 645.5px;
-  height: 89px;
-  overflow: hidden;
-  background: #FFFFFF;
-  border: 1px solid #DEDEDE;
-  margin-bottom: 25px;
-  padding-left: 24.5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-}
-.task-wrap .task-con #content > div .tab-con-right li .tab-con-title {
-  position: absolute;
-  font-family: PingFangSC-Medium;
-  font-size: 18px;
-  color: #346269;
-  line-height: 89px;
-}
-.task-wrap .task-con #content > div .tab-con-right li .progress-bar {
-  position: absolute;
-  overflow: hidden;
-  left: 250px;
-  top: 42px;
-  width: 100px;
-  height: 4px;
-  background-color: #EBEBEB;
-}
-.task-wrap .task-con #content > div .tab-con-right li .progress-bar div {
-  float: left;
-  height: 100%;
+.homework-item .item-header {
+  line-height: 26px;
 }
 
-.task-wrap .task-con #content > div .tab-con-right li .progress-bar .on {
-  background-color: #59BE73;
+.homework-item .item-header .receive-time {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #909090;
+  margin-right: 30px;
 }
-.task-wrap .task-con #content > div .tab-con-right li .progress-text {
+
+.homework-item .item-header .subject {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #414749;
+}
+
+.homework-item .item-header .lookinto-course {
+  display: block;
+  position: relative;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #919191;
+  padding-right: 17px;
+}
+.homework-item .item-nav {
+  padding-top: 25px;
+  position: relative;
+}
+
+.item-nav>i {
   position: absolute;
-  left: 400px;
-  line-height: 89px;
+  width: 7.5px;
+  height: 12px;
+  background: url("../images/arrow-right.png") center no-repeat;
+  background-size: contain;
+  right: 60px;
+  top: 25px;
+  transform: rotate(90deg);
+}
+.item-nav>i.on{
+  transform: rotate(270deg);
+}
+.homework-item .item-content {
+  padding-top: 27px;
+}
+
+.homework-item .item-banner {
+  position: relative;
+  width: 393px;
+  height: 201px;
+}
+
+.item-nav-item {
+  width: 110px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.item-nav-item .new {
+  position: absolute;
+  font-style: normal;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 23px;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  background-image: linear-gradient(-180deg, #fbd249 0%, #f5a623 100%);
+  border-radius: 2px;
+  right: 88px;
+  top: -3px;
+}
+
+.item-nav-item h3 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #678c91;
+  line-height: 18px;
+  padding-bottom: 4.5px;
+  font-weight: 100;
+  
+}
+
+.item-nav-item .line {
+  position: absolute;
+  width: 63px;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0px;
+  bottom: 0px;
+}
+
+.item-nav-item.active h3 {
+  color: #346269;
+}
+.item-nav-item.active .line {
+  background: #346269;
+}
+
+.content-right-item {
+  position: relative;
+  margin-bottom: 25px;
+  width: 669px;
+  height: 88.8px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+}
+
+.content-right-item:last-child {
+  margin-bottom: 0;
+}
+
+.content-right-item:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-right-item .title {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #346269;
+  line-height: 88.8px;
+  font-weight: bold;
+  padding-left: 24.5px;
+}
+
+.content-right-item .gotoPractise {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #27aec2;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 65px;
+  height: 30px;
+  margin-top: 26.4px;
+  margin-right: 38.5px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #27aec2;
+  line-height: 30px;
+  padding-left: 37px;
+  cursor: pointer;
+}
+
+.content-right-item .gotoPractise .book {
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  background: url("../images/exercese1.png") center no-repeat;
+  background-size: contain;
+  left: 13px;
+  top: 7px;
+}
+
+.content-right-item .gotoPractise:hover {
+  color: #ffffff;
+  background: #27aec2;
+}
+
+.content-right-item .gotoPractise:hover .book {
+  background: url("../images/exercese2.png") center no-repeat;
+  background-size: contain;
+}
+
+.content-right-item .toast-down {
+  width: 13px;
+  height: 9px;
+  background: url("../images/down.png") center no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  margin-top: 37px;
+  cursor: pointer;
+}
+.content-right-item .toast-down.on{
+  transform: rotate(180deg);
+}
+.content-right-item .toast-up {
+  width: 13px;
+  height: 9px;
+  background: url("../images/up.png") center no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  margin-top: 37px;
+  cursor: pointer;
+}
+
+.content-right-item .finish-info {
   font-family: PingFangSC-Regular;
   font-size: 12px;
   color: #346269;
+  line-height: 12px;
+  margin-right: 6px;
+  padding-top: 34px;
 }
-.task-wrap .task-con #content > div .tab-con-right li .tab-con-test {
+
+.content-right-item .progressBar {
+  background: #ebebeb;
+  border-radius: 3px;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 38px;
+  margin-right: 8px;
+}
+
+.content-right-item .progressBar .progress {
+  background: #59be73;
+  border-radius: 3px;
+  height: 100%;
+  width: 50%;
+}
+
+.content-right-item .toast {
   position: absolute;
-  left: 520px;
-  top: 29px;
-  line-height: 30px;
-  text-align: center;
-  width: 94px;
-  height: 30px;
-  background: #fff;
-  border: 1px solid #27AEC2;
-  border-radius: 4px;
-  font-family: PingFangSC-Regular;
+  width: 195px;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  top: 63px;
+  left: 345px;
+  padding-top: 8px;
+  z-index: 11;
+}
+
+.content-right-item .toast ul .toast-item {
+  height: 36px;
+  font-family: PingFangSC-Medium;
   font-size: 14px;
-  color: #27AEC2;
+  color: #346269;
+  line-height: 36px;
+  cursor: pointer;
+  padding-left: 16px;
+  position: relative;
 }
-.task-wrap .task-con #content > div .tab-con-right li .tab-con-test i {
-  font-size: 14px;
-  margin-right: 5px;
-  color: #27AEC2;
-  font-weight: bold;
+
+.content-right-item .toast ul .toast-item .select {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  background: url("../images/select.png") center no-repeat;
+  background-size: contain;
+  right: 20px;
+  top: 11px;
 }
-.task-wrap .task-con #content > div .tab-con-right li .tab-con-test:hover {
-  background: #27AEC2;
-  border: 1px solid #27AEC2;
-  color: #fff;
+
+.content-right-item .toast ul .toast-item:hover {
+  background: #f4f4f4;
 }
-.task-wrap .task-con #content > div .tab-con-right li .tab-con-test:hover i {
-  color: #fff;
+
+.content-right-item .toast .triangle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-top: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  transform: rotate(45deg);
+  z-index: 10;
+  right: 22px;
+  top: -8px;
+  background-color: #fff;
 }
-.task-wrap .task-con .item {
+.item-content-item{
   display: none;
 }
-.task-wrap .task-con .item .list_wrap{
-  overflow: hidden;
+
+.item-content-item .content-left .item-banner {
+  position: relative;
+  width: 393px;
+  height: 201px;
+  background: url("../images/reading.jpg") center no-repeat;
+  background-size: contain;
 }
-.task-wrap .task-con .show {
-  display: block;
+.listening{
+  margin-top: 50px;
+}
+.listening .content-left .item-banner {
+  background: url("../images/listen.jpg") center no-repeat;
+  background-size: contain;
 }

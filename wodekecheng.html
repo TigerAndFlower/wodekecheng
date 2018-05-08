@@ -39,7 +39,7 @@
             </div>
           </li>
           <li class="fl">
-            <a href="/student/homework.html">我的作业</a>
+            <a href="/student/homework.html">我的TASK</a>
           </li>
           <li class="fl">
             <a href="/Student/course">我的课程</a>
@@ -119,92 +119,703 @@
     <!-- test练习 -->
     <div class="task-wrap">
       <div class="wrap">
-        <div class="task-title">
-          <span>免费体验</span>
-          <a href="">立即体验</a>
+        <!-- 头部标题 -->
+        <div class="task-header">
+          <h3>在线练习</h3>
+          <select>
+            <option value="0">第一阶段</option>
+            <option value="1">第二阶段</option>
+            <option value="2">第三阶段</option>
+            <option value="3">第四阶段</option>
+            <option value="4">第五阶段</option>
+            <option value="5">第六阶段</option>
+            <option value="6">第七阶段</option>
+            <option value="7">第八阶段</option>
+            <option value="8">第九阶段</option>
+            <option value="9">第十阶段</option>
+          </select>
+          <div class="task-header-right">
+            <P>开始时间：<span>2017-01-01</span></P>
+            <P>结束时间：<span>2017-12-01</span></P>
+          </div>
         </div>
-        <div class="task-con">
-          <div class="task-con-title">第一轮</div>
-          <!-- tab切换 -->
-          <div class="tab-contain">
-            <!-- tab栏 -->
-            <div id="tabs">
-              <i href="javascript:;" class="iconfont">&#xe630;</i>
-            </div>
-            <div class="generalize">
-              <div>TASK 1——TASK 10</div>
-              <div>TASK 11——TASK 20</div>
-              <div>TASK 21——TASK 30</div>
-              <div>TASK 31——TASK 40</div>
+        <div class="main home-wrap">
+          <div class="homework-item" id="homework-item1">
+            <ul class="item-nav clearfix">
+              <li class="item-nav-item fl active">
+                <h3>TASK
+                  <span data-ind="0">1</span>
+                </h3>
 
-            </div>
-            <!-- 对应显示内容 -->
-            <div id="content">
-              <div id="tab1" class="item show">
-                  <div class="list_wrap">
-                      <div class="tab-con-left">
-                          <img src="images/reading.jpg" alt="">
-                        </div>
-                        <ul class="tab-con-right">
-                          <li>
-                            <span class="tab-con-title">句子分析基础</span>
-                            <div class="progress-bar">
-                                <div class="progress-win" style="background-color: red;"></div>
-                            </div>
-                            <span class="progress-text">已完成
-                              <span class="js-completed">2</span>/5</span>
-                            <a href="#" class="tab-con-test">
-                              <i class="iconfont">&#xe663;</i>去练习</a>
-                          </li>
-                          <li>
-                            <span class="tab-con-title">句子分析</span>
-                            <div class="progress-bar">
-                                <div class="progress-win" style="background-color: red;"></div>
-                            </div>
-                            <span class="progress-text">已完成
-                              <span class="js-completed">4</span>/5</span>
-                            <a href="#" class="tab-con-test">
-                              <i class="iconfont">&#xe663;</i>去练习</a>
-                          </li>
-                        </ul>
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="1">2</span>
+                </h3>
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="2">3</span>
+                </h3>
+
+                <span class="line"></span>
+
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="3">4</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="4">5</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="5">6</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="6">7</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="7">8</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="8">9</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <li class="item-nav-item fl">
+                <h3>TASK
+                  <span data-ind="9">10</span>
+                </h3>
+
+                <span class="line"></span>
+              </li>
+              <i></i>
+              <div class="testTab">
+                    <div class="testTab-item">
+                      TASK
+                      <span class="firstNum">1</span>
+                      ——TASK
+                      <span class="lastNum">10</span></div>
+                    <div class="testTab-item">
+                      TASK
+                      <span class="firstNum">11</span>
+                      ——TASK
+                      <span class="lastNum">
+                        20</span></div>
+                    <div class="testTab-item">
+                      TASK
+                      <span class="firstNum">21</span>
+                      ——TASK
+                      <span class="lastNum">30</span></div>
+                    <div class="testTab-item">
+                      TASK
+                      <span class="firstNum">31</span>
+                        ——TASK
+                        <span class="lastNum">40</span></div>
+                    <div class="testTab-item">
+                      TASK
+                      <span class="firstNum">41</span>
+                      ——TASK
+                      <span class="lastNum">50</span></div>
+                    <i class="triangle"></i>
+              </div>
+            </ul>
+            <ul class="item-content">
+              <li class="item-content-item">
+                <div class="reading clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+                    </div>
                   </div>
-                  <div class="list_wrap">
-                      <div class="tab-con-left">
-                          <img src="images/listen.jpg" alt="">
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析2</li>
+                          <li class="toast-item">句子分析3</li>
+                          <li class="toast-item">句子分析4</li>
+                          <li class="toast-item">句子分析5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析基础</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析基础1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础2</li>
+                          <li class="toast-item">句子分析基础3
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础4</li>
+                          <li class="toast-item">句子分析基础5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="space-line"></div>
+                <div class="listening clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+
+                    </div>
+
+                  </div>
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">五步精听</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+
+                      <div class="finish-info fr" style="margin-right:29px;">已完成
+                        <span>1</span>/
+                        <span>1</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content-item">
+                <div class="reading clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+                    </div>
+                  </div>
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析2</li>
+                          <li class="toast-item">句子分析3</li>
+                          <li class="toast-item">句子分析4</li>
+                          <li class="toast-item">句子分析5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析基础</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析基础1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础2</li>
+                          <li class="toast-item">句子分析基础3
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础4</li>
+                          <li class="toast-item">句子分析基础5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="space-line"></div>
+                <div class="listening clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+
+                    </div>
+
+                  </div>
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">五步精听</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+
+                      <div class="finish-info fr" style="margin-right:29px;">已完成
+                        <span>1</span>/
+                        <span>1</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content-item">
+                <div class="reading clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+                    </div>
+                  </div>
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析2</li>
+                          <li class="toast-item">句子分析3</li>
+                          <li class="toast-item">句子分析4</li>
+                          <li class="toast-item">句子分析5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">句子分析基础</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+                      <div class="toast-down fr"></div>
+
+                      <div class="finish-info fr">已完成
+                        <span>2</span>/
+                        <span>5</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="toast">
+                        <ul>
+                          <li class="toast-item">句子分析基础1
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础2</li>
+                          <li class="toast-item">句子分析基础3
+                            <i class="select"></i>
+                          </li>
+                          <li class="toast-item">句子分析基础4</li>
+                          <li class="toast-item">句子分析基础5</li>
+                        </ul>
+                        <i class="triangle"></i>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="space-line"></div>
+                <div class="listening clearfix">
+                  <div class="content-left fl">
+                    <div class="item-banner">
+
+                    </div>
+
+                  </div>
+                  <div class="content-right fr">
+                    <div class="content-right-item clearfix">
+                      <div class="title fl">五步精听</div>
+                      <div class="gotoPractise fr">
+                        <i class="book"></i>去练习
+                      </div>
+
+                      <div class="finish-info fr" style="margin-right:29px;">已完成
+                        <span>1</span>/
+                        <span>1</span>
+                      </div>
+                      <div class="progressBar fr">
+                        <div class="progress"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="homework-item" id="homework-item2">
+              <ul class="item-nav clearfix">
+                  <li class="item-nav-item fl active">
+                    <h3>TASK
+                      <span data-ind="0">1</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="1">2</span>
+                    </h3>
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="2">3</span>
+                    </h3>
+    
+                    <span class="line"></span>
+    
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="3">4</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="4">5</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="5">6</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="6">7</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="7">8</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="8">9</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <li class="item-nav-item fl">
+                    <h3>TASK
+                      <span data-ind="9">10</span>
+                    </h3>
+    
+                    <span class="line"></span>
+                  </li>
+                  <i></i>
+                  <div class="testTab">
+                        <div class="testTab-item">
+                          TASK
+                          <span class="firstNum">1</span>
+                          ——TASK
+                          <span class="lastNum">10</span></div>
+                        <div class="testTab-item">
+                          TASK
+                          <span class="firstNum">11</span>
+                          ——TASK
+                          <span class="lastNum">
+                            20</span></div>
+                        <div class="testTab-item">
+                          TASK
+                          <span class="firstNum">21</span>
+                          ——TASK
+                          <span class="lastNum">30</span></div>
+                        <div class="testTab-item">
+                          TASK
+                          <span class="firstNum">31</span>
+                            ——TASK
+                            <span class="lastNum">40</span></div>
+                        <div class="testTab-item">
+                          TASK
+                          <span class="firstNum">41</span>
+                          ——TASK
+                          <span class="lastNum">50</span></div>
+                        <i class="triangle"></i>
+                  </div>
+                </ul>
+                <ul class="item-content">
+                  <li class="item-content-item">
+                    <div class="reading clearfix">
+                      <div class="content-left fl">
+                        <div class="item-banner">
                         </div>
-                        <ul class="tab-con-right">
-                            <li>
-                                <span class="tab-con-title">五步精听</span>
-                                <div class="progress-bar">
-                                  <div class="progress-win" style="background-color: red;"></div>
-                                </div>
-            
-                                <span class="progress-text">已完成
-                                  <span class="js-completed">3</span>/5</span>
-                                <a href="#" class="tab-con-test">
-                                  <i class="iconfont">&#xe663;</i>去练习</a>
+                      </div>
+                      <div class="content-right fr">
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">句子分析</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+                          <div class="toast-down fr"></div>
+    
+                          <div class="finish-info fr">已完成
+                            <span>2</span>/
+                            <span>5</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="toast">
+                            <ul>
+                              <li class="toast-item">句子分析1
+                                <i class="select"></i>
                               </li>
-                        </ul>
-                  </div>
-              </div>
-              <div id="tab2" class="item">
-                <h2>TASK 2</h2>
-                <p>text here!!!text here!!!text here!!</p>
-                <p>text here!!!text here!!!text here!!!text here!text here!!!text here!!!text here!!!</p>
-              </div>
-              <div id="tab3" class="item">
-                <h2>title 33333</h2>
-                <p>text here!!!</p>
-                <p>text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text here!!!text
-                  here!!!
-                </p>
-              </div>
-              <div id="tab4" class="item">
-                <h2>title 44444</h2>
-                <p>text here!!!text here!!!text here!!!text here!!!text here!!!</p>
-                <p>text here!!!text </p>
-              </div>
-            </div>
+                              <li class="toast-item">句子分析2</li>
+                              <li class="toast-item">句子分析3</li>
+                              <li class="toast-item">句子分析4</li>
+                              <li class="toast-item">句子分析5</li>
+                            </ul>
+                            <i class="triangle"></i>
+                          </div>
+                        </div>
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">句子分析基础</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+                          <div class="toast-down fr"></div>
+    
+                          <div class="finish-info fr">已完成
+                            <span>2</span>/
+                            <span>5</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="toast">
+                            <ul>
+                              <li class="toast-item">句子分析基础1
+                                <i class="select"></i>
+                              </li>
+                              <li class="toast-item">句子分析基础2</li>
+                              <li class="toast-item">句子分析基础3
+                                <i class="select"></i>
+                              </li>
+                              <li class="toast-item">句子分析基础4</li>
+                              <li class="toast-item">句子分析基础5</li>
+                            </ul>
+                            <i class="triangle"></i>
+                          </div>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="space-line"></div>
+                    <div class="listening clearfix">
+                      <div class="content-left fl">
+                        <div class="item-banner">
+    
+                        </div>
+    
+                      </div>
+                      <div class="content-right fr">
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">五步精听</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+    
+                          <div class="finish-info fr" style="margin-right:29px;">已完成
+                            <span>1</span>/
+                            <span>1</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content-item">
+                    <div class="reading clearfix">
+                      <div class="content-left fl">
+                        <div class="item-banner">
+                        </div>
+                      </div>
+                      <div class="content-right fr">
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">句子分析</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+                          <div class="toast-down fr"></div>
+    
+                          <div class="finish-info fr">已完成
+                            <span>2</span>/
+                            <span>5</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="toast">
+                            <ul>
+                              <li class="toast-item">句子分析1
+                                <i class="select"></i>
+                              </li>
+                              <li class="toast-item">句子分析2</li>
+                              <li class="toast-item">句子分析3</li>
+                              <li class="toast-item">句子分析4</li>
+                              <li class="toast-item">句子分析5</li>
+                            </ul>
+                            <i class="triangle"></i>
+                          </div>
+                        </div>
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">句子分析基础</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+                          <div class="toast-down fr"></div>
+    
+                          <div class="finish-info fr">已完成
+                            <span>2</span>/
+                            <span>5</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+                          <div class="toast">
+                            <ul>
+                              <li class="toast-item">句子分析基础1
+                                <i class="select"></i>
+                              </li>
+                              <li class="toast-item">句子分析基础2</li>
+                              <li class="toast-item">句子分析基础3
+                                <i class="select"></i>
+                              </li>
+                              <li class="toast-item">句子分析基础4</li>
+                              <li class="toast-item">句子分析基础5</li>
+                            </ul>
+                            <i class="triangle"></i>
+                          </div>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="space-line"></div>
+                    <div class="listening clearfix">
+                      <div class="content-left fl">
+                        <div class="item-banner">
+    
+                        </div>
+    
+                      </div>
+                      <div class="content-right fr">
+                        <div class="content-right-item clearfix">
+                          <div class="title fl">五步精听</div>
+                          <div class="gotoPractise fr">
+                            <i class="book"></i>去练习
+                          </div>
+    
+                          <div class="finish-info fr" style="margin-right:29px;">已完成
+                            <span>1</span>/
+                            <span>1</span>
+                          </div>
+                          <div class="progressBar fr">
+                            <div class="progress"></div>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
           </div>
         </div>
       </div>
@@ -228,6 +839,8 @@
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/homework_home.js"></script>
   <script>
     // 免费课程 切换
     course_btn();
@@ -250,64 +863,7 @@
       })
     }
   </script>
-  <script>
-      window.onload = function () {
-        // 遍历生成tab
-        createTabLi(0, 10)
-  
-        function createTabLi(first, last) {
-          var tabs = document.querySelector("#tabs");
-          var new_li = document.createElement('ul');
-          for (var i = first; i < last; i++) {
-            new_li.innerHTML += '<li><a href="javascript:;" title="tab' + (i + 1) + '">TASK ' + (i + 1) +
-              '</a></li>';
-            tabs.appendChild(new_li);
-          }
-          $("#tabs li:first").addClass("current");
-        }
-        // 右上角箭头切换
-        var flag = true;
-        $('#tabs i').click(function (e) {
-          e.preventDefault();
-          if (flag) {
-            $(this).addClass("on");
-            $(".generalize").show();
-            flag = !flag;
-          } else {
-            $(this).removeClass("on");
-            $(".generalize").hide();
-            flag = !flag;
-          }
-        });
-        // 点击右侧更换题目序列；
-        var allTabs = document.querySelectorAll(".generalize div")
-        $(".generalize div").on("click", function () {
-          $("#tabs ul").remove();
-          var i = $(this).index();
-          createTabLi((i * 10), (i + 1) + "0");
-          $(".generalize").hide();
-          $("#tabs i").removeClass("on");
-          tabConHide(i);
-          flag = true;
-        })
-        // 下方内容默认显示第一个
-        tabConHide(0);
-  
-        function tabConHide(ind) {
-          $("#content>div").removeClass('show');
-          $("#content>div:eq(" + (ind * 10) + ")").addClass('show');
-        }
-  
-        // tab切换
-        $('body').on("click", "#tabs a", function (e) {
-          e.preventDefault();
-          $('#tabs li').removeClass("current")
-          $(this).parent().addClass("current");
-          $("#content div").removeClass("show");
-          $('#' + $(this).attr('title')).addClass('show');
-        });
-      }
-    </script>
+
 </body>
 
 </html>
